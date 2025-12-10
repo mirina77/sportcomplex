@@ -577,10 +577,89 @@ body {
 /* =========================
    АДАПТИВНІСТЬ
    ========================= */
+/*до 1024px планшет*/
+@media (max-width: 1024px) {
 
+.contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.contact-left, .contact-right {
+    margin: 0;
+}
+
+.map-container {
+    padding: 15px;
+}
+}
+
+/*на екранах до 768px (планшети/великі телефони)*/
 @media (max-width: 768px) {
 
-    .main {
+/*Меню робимо компактніше*/
+.header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+}
+nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*картки напрямків-2 в рял*/
+.direction-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/*на екранах до 480px (телефони)*/
+
+@media (max-width: 480px) {
+    /*Одноколонка для карток*/
+.direction-grid {
+    grid-template-columns: 1fr;
+}
+/*Заголовкі меньші*/
+ h2 {
+font-size: 18px;
+ }
+/*Форма*/
+.contact-form input,
+.contact-form textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+}
+.contact-form button {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+}
+/*Карта*/
+.map-caption {
+    font-size: 13px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.map-icon svg {
+    margin-bottom: 5px;
+}
+/*Блоки загальні*/
+.section {
+    padding: 20px;
+}
+
+.site-header {
+    position: static; /*Щоб не перекривало контент*/
+}
+    
+}
+
+
+.main {
         padding: 20px;
     }
 
