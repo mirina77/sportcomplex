@@ -618,6 +618,25 @@ nav ul {
 /*на екранах до 480px (телефони)*/
 
 @media (max-width: 480px) {
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 6px 15px;
+    background: #334;
+}
+.header-inner {
+    gap: 6px;
+}
+.main-nav ul {
+    align-items: center;
+}
+.section {
+    padding: 15px;
+    margin: 15px 8px;
+    scroll-margin-top: 80px;
+}
+
     /*Одноколонка для карток*/
 .direction-grid {
     grid-template-columns: 1fr;
@@ -647,43 +666,7 @@ font-size: 18px;
 .map-icon svg {
     margin-bottom: 5px;
 }
-/*Блоки загальні*/
-.section {
-    padding: 20px;
-}
 
-.site-header {
-    position: static; /*Щоб не перекривало контент*/
-}
     
 }
 
-
-.main {
-        padding: 20px;
-    }
-
-    .section {
-        padding: 20px;
-        margin: 20px 10px;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .trainer-cards {
-        flex-direction: column;
-    }
-
-    .price-cards {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .direction-cover img {
-        height: 200px;
-    }
-}
