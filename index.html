@@ -75,59 +75,85 @@
                             
                     </div>
 
-                    </section>
-                     
-                        
+                    </section>                                        
 
                         
                         <!--Розклад-->
-                        <section id="schedule" class="schedule-section">
-                            <h2>Розклад тренувань</h2>
-                            <table class="schedule-table">
-                                <thead>
-                                    <tr>
-                                        <th>Час</th>
-                                        <th>Понеділок</th>
-                                        <th>Вівторок</th>
-                                        <th>Середа</th>
-                                        <th>Четвер</th>
-                                        <th>П'ятниця</th>
-                                    </tr>
-                                </table>
-                                <tbody>
-                                    <tr>
-                                        <td>08:00 - 09:00</td>
-                                        <td>Фітнес</td>
-                                        <td></td>
-                                        <td></td>
-                                        
-                                    </tr>
-                                </tbody>    
-                            <p class="schedule-note">Тут пізніше зробимо таблицю або інтерактивний розклад.</p>
+                        <section id="schedule" class="section">
+                            <div class="container">
+                                <div class="card schedule-card">
+                                    <h2 class="section-title">Розклад тренувань</h2>
+
+                                    <div class="worktime">
+                                        <span class="worktime__icon" aria-hidden="true">
+                                            <svg xmlms="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle  cx="12" cy="12" r="9"></circle>                                                                                       
+                                            <path d="M12 7v5l3 2"></path>
+                                        </svg>
+                                        </span>
+
+                                    <div class="worktime__content">
+                                        <p class="worktime__title">Графік роботи спортивного комплексу</p>
+
+                                        <p class="worktime__hours">
+                                            <strong>Щодня:</strong>  07:00-22:00
+                                            <span class="worktime__badge">без вихідних</span>
+                                        </p>
+
+                                        <div class="worktime__actions">
+                                            <a class="btn btn-primary" href="#contact">Записатися</a>
+                                            <a class="btn btn-ghost" href="tel:+380502015068">Подзвонити</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                                    
+
                         </section>
                         <!--Тренери-->    
                          <section id="trainers" class="section">
-                            <h2>Наші тренери</h2>
+                            <div class="container">
+                            <h2 class="section-title">Наші тренери</h2>
 
                             <div class="trainer-cards">
-
+                            <!--Тренер1-->
                             <div class="trainer-card">
-                                <div class="trainer-avatar">ІП</div>
-                                <h3>Іван Петренко</h3>
-                                <p>Тренер з фітнесу та силових тренувань. 7 років досвіду.</p>
+                                <div class="trainer-avatar">ЄОА</div>
+                                <h3 class="trainer-name">Ємець Олена Андріївна</h3>
+                                <p class="trainer-desc">Тренер з тенісу</p>
                             </div>
-
+                            <!--Тренер2-->
                             <div class="trainer-card">
-                                <div class="trainer-avatar">ОК</div>
-                                <h3>Олена Коваль</h3>
-                                <p>Інструктор з йоги та пілатесу. Індивідуальний підхід до кожного</p>
+                                <div class="trainer-avatar">КАЮ</div>
+                                <h3 class="trainer-name">Козачок Артем Юрійович</h3>
+                                <p class="trainer-desc">Тренер футзалу . Індивідуальний підхід до кожного</p>
                             </div>
-
+                            <!--Тренер3-->
                             <div class="trainer-card">
-                                <div class="trainer-avatar">АС</div>
-                                <h3>Андрій Сидоренко</h3>
-                                <p>Тренер працює з дорослими та дітьми</p>
-                            </div>                                            
+                                <div class="trainer-avatar">НАВ</div>
+                                <h3 class="trainer-name">Наконечний Андрій Віталійович</h3>
+                                <p class="trainer-desc">Тренер з тенісу працює з дорослими та дітьми</p>
+                            </div>
+                            <!--Тренер4-->
+                            <div class="trainer-card">
+                                <div class="trainer-avatar">ССС</div>
+                                <h3 class="trainer-name">Сафарян Сергій Сергійович </h3>
+                                <p class=" trainer-desc">Тренер з тенісу/завідувач бюро фізкультури</p>
+                            </div>
+                            <!--Тренер5-->
+                            <div class="trainer-card">
+                                <div class="trainer-avatar">УІЮ</div>
+                                <h3 class="trainer-name">Усюкін Іван Юрійович</h3>
+                                <p class=" trainer-desc">Тренер з силових видів спорту</p>
+                            </div>
+                            <!--Тренер6-->
+                            <div class="trainer-card">
+                                <div class="trainer-avatar">ШЄП</div>
+                                <h3 class="trainer-name">Шклярук Євгенія Павлівна</h3>
+                                <p class=" trainer-desc">Тренер з тенісу</p>
+                            </div>
+                            </div>
+                        </div>
                         </section>
 
                         <!--Тарифи-->    
@@ -147,7 +173,7 @@
 
                                 <div class="price-card">
                                         <h4>Теніс (відкритий корт)</h4>
-                                        <p class="price">400 грн / 60 хв</p>
+                                        <p class="price">450 грн / 60 хв</p>
                                         <p class="desc">Відкритий майданчик.</p>
                                 </div>
 
@@ -254,6 +280,7 @@
                                         <strong>E-mail:</strong>
                                         <a href="mailto:sk.antey.antonov@gmail.com">sk.antey.antonov@gmail.com</a>
                                     </p>
+                                    <p><strong>Графік роботи:</strong> щодня 07:00-22:00 (без вихідних)</p>
                                  </div>
 
                                 <!--Права колонка ФОРМА-->
