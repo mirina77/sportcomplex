@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
     <head>
-        <meta charset="UTF-8 /">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Спортивний комплекс</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body style="margin: 0; font-family: Arial, sans-serif;">
-        <header class="site-header">
+    <body>
+        <header class="site-header">        
             <div class="header-inner">
                 <div class="logo">
                     <img src="images/logo-antey.jpeg" alt="Логотип Антей">
                     <span class="logo-span">СПОРТИВНИЙ КОМПЛЕКС</span>
                 </div>
+
                 <nav class="main-nav">
                     <ul>
                         <li><a href="#directions">Головна</a></li>
@@ -22,13 +23,12 @@
                         <li><a href="#contact">Контакти</a></li>
                     </ul>
                 </nav>
-            </div>            
-        </header>
-                <main class="main">
-
-                    <!--Головний блок-->
-                    
-                    <section class="section" id="directions">
+            </div>
+            </header>            
+        
+                <main class="main">          
+                    <!--Головний блок-->                    
+                    <section id="directions" class="section section-directions">
                         <div class="container">
 
                                 <!--Обкладинка-->                            
@@ -37,46 +37,43 @@
                                 </div>
 
                                     <!--Заголовок-->
-                                <div class="direction-header">
+                                <div class="section-title">
                                     <h2>Наші напрямки</h2>
-                                    <p>Вітаємо в спортивному комплексі "АНТЕЙ. Сучасні тренажери та індивідуальні програми тренувань.</p>
-                                </div>
-                           
+                                    <p>Вітаємо в спортивному комплексі "АНТЕЙ". Сучасні тренажери та індивідуальні програми тренувань.</p>
+                                </div>                           
                         
-                        <!--Картки-->
-                        <div class="schedule-card">
-                        <div class ="direction-grid">
-                            <!--Теніс-->
-                            <div class="direction-card">
-                                <div class="card-image">
-                                    <img src="images/tennis.jpg" alt="Тенісні корти Антей">
-                                </div>
-                                <h3>Тенісні корти</h3>
-                                <p>Відкриті та закриті корти. Індивідуальні та парні тренування.</p>
-                            </div>
+                                    <!--Картки-->
+                                <div class="direction-grid">
 
-                            <!--Фітнес-->
-                            <div class="direction-card">
-                                <div class="card-image">
-                                    <img src="images/fitness.jpg" alt="Фітнес та силові тренування">
-                                </div>
-                                <h3>Фітнес та силові тренування</h3>
-                                <p>Тренажерна зала та групові заняття для зміцнення тіла.</p>
-                            </div>
-
-                            <!--Групові заняття-->
-                            <div class="direction-card">
-                                <div class="card-image">
-                                    <img src="images/group-training.jpg" alt="Групові заняття">
-                                </div>
-                                <h3>Групові заняття</h3>
-                                <p>Йога, пілатес, функціональні та танцювальні програми.</p>
-                            </div>
-                        </div>
-                            
-                    </div>
-
-                    </section>                                                
+                                    <div class ="direction-card">
+                                        <div class="card-image">
+                                            <img src="images/tennis.jpg" alt="Тенісні корти Антей">
+                                        </div>
+                                        <h3>Тенісні корти</h3>
+                                        <p>Відкриті та закриті корти. Індивідуальні та парні тренування </p>
+                                        </div>
+                                        
+                                        <div class="direction-card">
+                                            <div class="card-image">
+                                                <img src="images/fitness.jpg" alt="Фітнес та силові тренування">
+                                            </div>
+                                            <h3>Фітнес та силові тренування</h3>
+                                            <p>Тренажерна зала та групові заняття для зміцнення тіла. </p>
+                                        </div>
+                                        
+                                        <div class="direction-card">
+                                            <div class="card-image">
+                                                <img src="images/group-training.jpg" alt="Группові заняття">
+                                            </div>
+                                            <h3>Группові заняття</h3>
+                                            <p>Йога, пілатес, функціональні та танцювальні програми.</p>
+                                            </div>
+                                            
+                                           </div>
+                                        
+                                        </div>
+                                    </section>
+                                                          
 
                         
                         <!--Розклад-->
@@ -87,7 +84,7 @@
 
                                     <div class="worktime">
                                         <span class="worktime__icon" aria-hidden="true">
-                                            <svg xmlms="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                             <circle  cx="12" cy="12" r="9"></circle>                                                                                       
                                             <path d="M12 7v5l3 2"></path>
@@ -108,7 +105,7 @@
                                         </div>
                                     </div>                                    
                                 </div>
-                                                    
+                            </div>                                                             
 
                         </section>
                         <!--Тренери-->    
@@ -157,19 +154,18 @@
                         </div>
                         </section>
 
-                        <!--Тарифи-->    
-                         <section class="section" id="prices">
-                            <h2>Тарифи</h2>
+                        <!--Тарифи-->
+                        <section class="section" id="prices">    
+                         <div class="container">
+                            <h2 class="section-title">Тарифи</h2>
 
                             <!--Теніс-->
-                            <h3 class="price-category">Теніс</h3>
-
+                            <h4 class="price-category">Теніс</h4>
                             <div class="price-cards">
-
-                                <div class="price-card">
-                                        <h4>Теніс (закритий корт)</h4>
-                                        <p class="price">800 грн / 60 хв</p>
-                                        <p class="desc">Закритий майданчик, штучне покриття.</p>
+                                <div class="price-card">                                                        
+                                <h4>Теніс (закритий корт)</h4>
+                                    <p class="price">800 грн / 60 хв</p>
+                                    <p class="desc">Закритий майданчик, штучне покриття.</p>
                                 </div>
 
                                 <div class="price-card">
@@ -186,14 +182,12 @@
                             </div>
 
                                 <!--Фітнес-->
-                                <h3 class="price-category">Фітнес та силові тренування</h3>
-
+                                <h4 class="price-category">Фітнес та силові тренування</h4>
                                 <div class="price-cards">
-
                                     <div class="price-card">
                                         <h4>Фітнес / Силові тренування</h4>
                                         <p class="price">300 грн / 60 хв</p>
-                                        <p class="desc">Мала зала групові заняття.</p>                                        
+                                        <p class="desc">Мала зала, групові заняття.</p>                                        
                                     </div>
 
                                     <div class="price-card">
@@ -204,11 +198,8 @@
                                 </div>
 
                                 <!--Бадмінтон-->
-                                <h3 class="price-category">Бадмінтон</h3>
-
-                                
+                                <h4 class="price-category">Бадмінтон</h4>                                
                                 <div class="price-cards">
-
                                     <div class="price-card">
                                         <h4>Бадмінтон (мала зала)</h4>
                                         <p class="price">300 грн / 60 хв</p>
@@ -217,10 +208,8 @@
                                 </div>
 
                             <!--Командні ігри-->
-                            <h3 class="price-category">Командні види спорту</h3>
-
+                            <h4 class="price-category">Командні види спорту</h4>
                                 <div class="price-cards">
-
                                     <div class="price-card">
                                         <h4>Волейбол / баскетбол (мала зала) </h4>
                                         <p class="price">500 грн / 60 хв</p>
@@ -228,8 +217,8 @@
                                     </div>
                                 </div>
 
-                                <p class="note">*Ціни на послуги можуть змінюватись залежно від сезону та вартості комунальних послуг.
-                                </p>
+                                <p class="prices-note">*Ціни на послуги можуть змінюватись залежно від сезону та вартості комунальних послуг.</p>
+                            </div>
                             </section>
 
                         <!--Контакти-->
@@ -314,13 +303,16 @@
                     <script src="js/main.js"></script>
 
                     <footer class="footer">
-                        <div class="footer-inner"
-                             class="footer-title">Спортивний комплекс "АНТЕЙ"</p>
+                        <div class="footer-inner">
+                             <div class="footer-title">
+                            <p>Спортивний комплекс "АНТЕЙ"</p>
+                            </div>
                             <p>Адреса:вул. Авіаконструкторська, 8-Б, м. Київ</p>
                             <p>Телефон: +38(050)201-50-68</p>
                             <p>E-mail:sk.antey.antonov@gmail.com </p>
+                            
 
-                            <div class="footer-social">
+                            <div class="social-links">
                                 <!--Поки що як текстові "іконки", подім можна підмінити на SVG-->
                                 <a href="https://facebook.com" target="_blank" class="social-icon">
                                 <!-- FB ICON -->
@@ -338,8 +330,6 @@
                                       
                             <p class="footer-copy">&copy;2025 Aнтей. Всі права захищено.</p>
                             </div>
-                        </footer>     
-
-                        
-               </body>    
-    </html>
+                        </footer>  
+                    </body>
+                </html>
