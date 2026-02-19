@@ -32,6 +32,25 @@ body {
     margin-top: 0;
     margin-bottom: 25px;
 }
+
+/* Універсальний стиль заголовків секцій */
+.section .section-title{
+    margin: 0 0 15px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+} 
+
+/* Рисочка під заголовком */
+.section .section-title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #111;
+    margin-top: 8px;
+}
 /* контейнер: однакова "ліва лінія" для всіх блоків */
 .container {
     max-width: 1200px;
@@ -46,6 +65,10 @@ body {
 
 .section-directions h2 {
     margin-bottom: 15px;
+}
+
+.price-category::after{
+    content: none !important;
 }
 
 /* =========================
@@ -153,13 +176,6 @@ body {
     filter: contrast(1.05) saturate(1.05);
 }
 
-/* Текст під обкладинкою */
-#directions h2 {
-    margin: 15px 0 5px;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
 
 #directions p {
     font-size: 16px;
@@ -169,14 +185,7 @@ body {
 }
 
 /*Тонка лінія*/
-#schedule h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: #111;
-    margin-top: 8px;
-}
+
 
 
 /* Сітка карток (адаптивна)*/
@@ -274,18 +283,7 @@ body {
     margin-top: 0;
 }
 
-#schedule h2::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: #111;
-    margin-top: 8px;
-}
-.section-title{
-    font-size: 32px;
-    margin-bottom: 12px;
-}
+
 
 .schedule-card {
     background: transparent;    
@@ -817,9 +815,8 @@ body {
     grid-template-columns: 1fr;
 }
 /*Заголовкі меньші*/
- h2 {
-font-size: 18px;
- }
+ .section .section-title {font-size: 22px;}
+
 /*Форма*/
 .contact-form input,
 .contact-form textarea {
